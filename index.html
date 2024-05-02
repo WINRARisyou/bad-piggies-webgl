@@ -1,30 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Bad Piggies WebGL</title>
-    <link rel="shortcut icon" href="/TemplateData/favicon.ico">
-    <link rel="stylesheet" href="/TemplateData/style.css">
-    <script src="/TemplateData/UnityProgress.js"></script>
-    <script src="/Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL_September222022.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Bad Piggies</title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="shortcut icon" href="TemplateData/favicon.ico">
+	<link rel="stylesheet" href="TemplateData/style.css">
+	<script src="TemplateData/UnityProgress.js"></script>
+	<script src="Build/UnityLoader.js"></script>
+	<link rel="manifest" href="manifest.json" />
+	<script>
+		const registerServiceWorker = async () => {
+			if ("serviceWorker" in navigator) {
+				try {
+					const registration = await navigator.serviceWorker.register("sw.js", {
+						scope: "/",
+					});
+					if (registration.installing) {
+						console.log("Service worker installing");
+					} else if (registration.waiting) {
+						console.log("Service worker installed");
+					} else if (registration.active) {
+						console.log("Service worker active");
+					}
+				} catch (error) {
+					console.error(`Registration failed with ${error}`);
+				}
+			}
+		};
+		registerServiceWorker();
+	</script>
+	<script>
+		if (typeof navigator.serviceWorker !== 'undefined') {
+			navigator.serviceWorker.register('sw.js')
+		}
+	  </script>
+	<script>
+		var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL_September222022.json", { onProgress: UnityProgress });
+	</script>
+	<div id="gameContainer" style="margin: 0px; padding: 0px; height: 100%; border: none;"></div>
+</head>
+
+<body>
+	<!--
     <div class="webgl-content">
       <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div id="gameContainer" style="margin: 0px; padding: 0px; height: 100%; border: none;"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">Bad Piggies WebGL</div>
-      </div>
+      </div>-->
+	<script>
+		gameInstance.SetFullscreen(1)
+	</script>
 	<h2 style="text-align: center;">If you see errors, try clearing your cache.</h2>
-      <h2 style="text-align: center;">Special Thanks to:</h2>
-      <a href="https://github.com/AssetRipper/AssetRipper">The people behind AssetRipper</a> <br>
-      <a href="https://github.com/BP-Innovation/Bad-Piggies-Original">The people behind the Bad Piggies reverse-engineering project</a>
-    </div>
-  </body>
+	<h2 style="text-align: center;">Special Thanks to:</h2>
+	<a href="https://github.com/AssetRipper/AssetRipper">The people behind AssetRipper</a> <br>
+	<a href="https://github.com/BP-Innovation/Bad-Piggies-Original">The people behind the Bad Piggies
+		reverse-engineering project</a>
+	</div>
+</body>
+
 </html>

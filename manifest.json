@@ -1,0 +1,35 @@
+{
+	"background_color": "#6ce249",
+	"dir": "ltr",
+	"display": "standalone",
+	"display_override": ["window-controls-overlay"],
+	"name": "Bad Piggies",
+	"orientation": "any",
+	"scope": "/",
+	"short_name": "Bad Piggies",
+	"start_url": "index.html",
+	"theme_color": "#fbb720",
+	"icons": [
+		{
+			"src": "TemplateData/favicon.ico",
+			"sizes": "1024x1024 512x512 256x256 128x128 64x64 32x32"
+		},
+		{
+			"src": "TemplateData/icon.png",
+			"sizes": "1024x1024 512x512 256x256 128x128 64x64 32x32",
+			"purpose": "any"
+		},
+		{
+			"src": "TemplateData/icon.png",
+			"sizes": "1024x1024 512x512 256x256 128x128 64x64 32x32",
+			"purpose": "maskable"
+		},
+		{
+			"src": "TemplateData/icon.png",
+			"sizes": "1024x1024",
+			"purpose": "maskable"
+		}
+	],
+	"id": "com.rovio.BadPiggies",
+	"description": "Get ready to see pigs fly! OiNk! Build makeshift contraptions from a huge collection of parts and make it to the goal without blowing your vehicle to pieces!"
+}
