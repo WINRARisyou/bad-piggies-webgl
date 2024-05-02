@@ -12,24 +12,28 @@
 	"icons": [
 		{
 			"src": "TemplateData/favicon.ico",
-			"sizes": "1024x1024 512x512 256x256 128x128 64x64 32x32"
+			"sizes": "1024x1024 512x512 256x256 128x128 64x64 32x32",
+			"type": "image/vnd.microsoft.icon"
 		},
 		{
 			"src": "TemplateData/icon.png",
 			"sizes": "1024x1024 512x512 256x256 128x128 64x64 32x32",
-			"purpose": "any"
+			"purpose": "any",
+			"type": "image/png"
 		},
 		{
 			"src": "TemplateData/icon.png",
 			"sizes": "1024x1024 512x512 256x256 128x128 64x64 32x32",
-			"purpose": "maskable"
+			"purpose": "any",
+			"type": "image/png"
 		},
 		{
 			"src": "TemplateData/icon.png",
 			"sizes": "1024x1024",
-			"purpose": "maskable"
+			"purpose": "any",
+			"type": "image/png"
 		}
 	],
 	"id": "com.rovio.BadPiggies",
-	"description": "Get ready to see pigs fly! OiNk! Build makeshift contraptions from a huge collection of parts and make it to the goal without blowing your vehicle to pieces!"
+	"description": "Get ready to see pigs fly! OiNk! Build makeshift contraptions from a huge collection of parts and make it to the goal without blowing your vehicle to pieces! I DO NOT OWN THE RIGHTS TO BAD PIGGIES, ROVIO DOES!!!!"
 }
