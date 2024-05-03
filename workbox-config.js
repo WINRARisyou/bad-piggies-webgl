@@ -1,9 +1,10 @@
 module.exports = {
-	globDirectory: './',
+	maximumFileSizeToCacheInBytes: 5000000000,
+	globDirectory: 'bad-piggies-webgl/',
 	globPatterns: [
 		'**/*.{js,unityweb,json,html,unity3d,ico,old,png,css}'
 	],
-	swDest: './sw.js',
+	swDest: 'bad-piggies-webgl/sw.js',
 	ignoreURLParametersMatching: [
 		/^utm_/,
 		/^fbclid$/
