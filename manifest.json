@@ -5,7 +5,7 @@
 	"display_override": ["window-controls-overlay"],
 	"name": "Bad Piggies",
 	"orientation": "any",
-	"scope": "/",
+	"scope": "./",
 	"short_name": "Bad Piggies",
 	"start_url": "index.html",
 	"theme_color": "#fbb720",
